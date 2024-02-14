@@ -1,27 +1,112 @@
-# AngularHealthApp
+<h1 align="center">Mental Health website</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+<div align="center">
+  Project created for self-use project.
+</div>
 
-## Development server
+<div align="center">
+  <h3>
+    <a href="#">
+      Visit Site
+    </a>
+  </h3>
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Project Structure](#project-structure)
+- [Contact](#contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+<img src="https://firebasestorage.googleapis.com/v0/b/personal-portfolio-b7e69.appspot.com/o/Angular-Health-website%2Fhealth-app-template.png?alt=media&token=42187a70-8d16-4693-8740-8abcc49531c4" width="600px">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project uses:
 
-## Running unit tests
+- maps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Built With
 
-## Running end-to-end tests
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project Structure
 
-## Further help
+Website Pages:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Home
+- About me
+- Services
+- Contact
+- Appointment
+
+<details>
+<summary>Home page</summary>
+
+Should show basic information about provided services.
+
+Features:
+
+- showing a list of services
+- showing information about the help offered
+- showing contact information
+</details>
+
+<details>
+<summary>About me page</summary>
+
+Visitors can read information about specialists who provide mental health help and experience information.
+
+Features:
+
+- showing detailed information about specialist
+- showing contact information
+- showing a button to get an appointment
+</details>
+
+<details>
+<summary>Services page</summary>
+
+Detailed information about experience and scope of assistance offered.
+
+Features:
+
+- showing experience information
+- showing the scope of assistance offered
+- showing a button to get an appointment
+</details>
+
+<details>
+<summary>Contact page</summary>
+
+Contact information with a specialist.
+
+Features:
+
+- showing address information
+- showing map with info on how to reach the appointment place
+- showing a phone number
+- showing Email
+- showing Working hours
+</details>
+
+<details>
+<summary>Appointment page</summary>
+
+Contact form to get an appointment.
+Send information to the specialist with data.
+
+\*Not saving personal users information.
+
+Features:
+
+- showing a contact form
+- send an appointment data
+</details>
+
+## Contact
+
+Design and development by
+
+[Portfolio I. Abdulina -->](https://ievgeniiaabdulina.github.io/Personal-Portfolio-Webpage/)
