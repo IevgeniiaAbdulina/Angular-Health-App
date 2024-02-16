@@ -107,6 +107,10 @@ Features:
 
 ## Contact
 
-Design and development by
+Design and development by Ievgeniia Abdulina
 
-[Portfolio I. Abdulina -->](https://ievgeniiaabdulina.github.io/Personal-Portfolio-Webpage/)
+<<<<<<<>>>>>>>
+<br>
+[=== PORTFOLIO ===](https://ievgeniiaabdulina.github.io/Personal-Portfolio-Webpage/)
+<br>
+<<<<<<<>>>>>>>

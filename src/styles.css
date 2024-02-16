@@ -1,1 +1,219 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Main Styles */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* Spacing */
+  --page-width-max: 1400px;
+  --site-gutter: 4vw;
+  --site-mobile-gutter: 6vw;
+
+  /* Colors */
+  --lightest-1: #FFFFFF;
+  --light-1: #DCD9D0;
+  --dark-1: #495A58;
+  --darkest-1: #3F4A49;
+
+  --lightest-2: #FFFFFF;
+  --light-2: #DCD9D0;
+  --bright-1: #FFFFFF;
+  --bright-2: #D4967D;
+  --dark-2: #495A58;
+  --darkest-2: #3F4A49;
+
+  /* Fonts */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+
+  --font-cormorant: "Cormorant", serif;
+  --font-open-sans:  "Open Sans", sans-serif;
+  --base-size: 18px;
+
+  /* Global Text Styles */
+  /* Headings */
+  --heading-line-height: 1.4em;
+  --heading-letter-spacing: 0em;
+  --heading-1: 6rem;
+  --heading-2: 4rem;
+  --heading-3: 2.8rem;
+  --heading-4: 1.6rem;
+
+  /* Paragraphs */
+  --paragraph-line-height: 1.9em;
+  --paragraph-letter-spacing: 0em;
+  --paragraph-1: 1.5rem;
+  --paragraph-2: 1rem;
+  --paragraph-3: 0.9rem;
+
+  /* Buttons */
+  --btn-padding-y: 1.4em;
+  --btn-padding-x: 2.338em;
+
+    /* PRIMARY BUTTON */
+  --btn-primary-size: 1rem;
+  /* SECONDARY BUTTON */
+  --btn-secondary-size: 1.1rem;
+  /* TERTIARY BUTTON */
+  --btn-tertiary-size: 0.9rem;
+}
+
+* { box-sizing: border-box;}
+html, body {
+  height: 100%;
+}
+
+body,
+.mat-body,
+.mat-typography {
+  max-width: var(--page-width-max);
+  margin: 0;
+  padding: var(--site-gutter);
+  font-family: var(--font-open-sans), "Roboto", "Helvetica Neue", sans-serif;
+  font-weight: var(--weight-regular);
+  font-size: var(--base-size);
+  font-style: normal;
+  line-height: normal;
+  color: var(--darkest-1);
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 375px) {
+  body,
+  .mat-body,
+  .mat-typography {
+    font-size: 16px;
+    padding: var(--site-mobile-gutter);
+  }
+}
+
+/* Global Text Styles */
+  /* Headings */
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4 {
+  font-family: var(--font-cormorant);
+  font-weight: var(--weight-regular);;
+  font-style: normal;
+  line-height: var(--heading-line-height);
+  letter-spacing: var(--heading-letter-spacing);
+  text-transform: none;
+}
+
+.mat-typography h1 {
+  font-size: var(--heading-1);
+}
+.mat-typography h2 {
+  font-size: var(--heading-2);
+}
+.mat-typography h3 {
+  font-size: var(--heading-3);
+}
+.mat-typography h4 {
+  font-size: var(--heading-4);
+}
+
+  /* Paragraphs */
+p {
+  font-family: var(--font-open-sans);
+  font-weight: var(--weight-regular);;
+  font-style: normal;
+  line-height: var(--paragraph-line-height);
+  letter-spacing: var(--paragraph-letter-spacing);
+  text-transform: none;
+}
+
+.paragraph-1 {
+  font-size: var(--paragraph-1);
+}
+.paragraph-2 {
+  font-size: var(--paragraph-2);
+}
+.paragraph-3 {
+  font-size: var(--paragraph-3);
+}
+
+  /* Buttons */
+button.mat-mdc-button-base {
+  font-family: var(--font-open-sans);
+  font-weight: var(--weight-regular);
+  font-style: normal;
+  letter-spacing: 0.1em;
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+}
+/* CUSTOM BUTTON STYLE */
+button.mat-mdc-button-base.custom-btn-style {
+  text-transform: uppercase;
+  border-radius: unset;
+  background-color: var(--bright-2);
+  color: var(--bright-1);
+  transition: .1s opacity linear;
+}
+  /* PRIMARY BUTTON */
+.btn-primary {
+  font-size: var(--btn-primary-size);
+}
+  /* SECONDARY BUTTON */
+  button.btn-secondary.mat-mdc-button-base {
+  font-size: var(--btn-secondary-size);
+}
+  /* TERTIARY BUTTON */
+  button.btn-tertiary.mat-mdc-button-base {
+  font-size: var(--btn-tertiary-size);
+}
+
+  /* Miscellaneous */
+.text-details {
+  font-family: var(--font-open-sans);
+  font-weight: var(--weight-regular);
+  font-style: normal;
+  line-height: 1em;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--bright-2 );
+}
+
+a:hover {
+  color: var(--dark-2);
+}
+
+/* Animations */
+.animated-element {
+  transition-timing-function: ease;
+  transition-duration: 0.9s;
+  transition-delay: 0.0545455s;
+}
+
+.translated-element {
+  animation-name: translateIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes translateIn {
+  from { transform: translate(0, 10vh); }
+  to { transform: translate(0); }
+}
+
+.fade-in-element {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
