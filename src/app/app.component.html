@@ -1,33 +1,78 @@
-<div class="header" role="header">
-  <h1>h1 Mental Health website</h1>
-  <h2>h2 Mental Health website</h2>
-  <h3>h3 Mental Health website</h3>
-  <h4>h4 Mental Health website</h4>
-  <nav>
-    <a href="#" class="text-details">1</a>
-    <a href="#" class="text-details">2</a>
-    <a href="#" class="text-details">3</a>
-  </nav>
-  <div style="margin: 10px;" class="animated-element fade-in-element">
-    <button mat-flat-button color="primary" class="btn-primary custom-btn-style">Button 1</button>
-  </div>
-  <div style="margin: 10px;">
-    <button mat-flat-button color="primary" class="btn-secondary custom-btn-style">Button 2</button>
-  </div>
-  <div style="margin: 10px;">
-    <button mat-flat-button color="primary" class="btn-tertiary custom-btn-style">Button 3</button>
-  </div>
-</div>
-<div role="main" class="translated-element">
-  <div>main</div>
-  <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
-  <p class="paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
-  <p class="paragraph-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
+<div class="page-wrapper">
+  <header id="header" role="header">
+    <div class="navbar-top">
+      <div class="navbar-inner-content">
+        <div class="header-title-nav-wrapper">
+          <div class="header-title">
+            <a href="#home"><b>MH</b> Mental Health website</a>
+          </div>
+          <div class="header-nav">
+            <div class="header-nav-item">
+              <a href="#section-1" class="header-element nav-button">Section 1</a>
+            </div>
+            <div class="header-nav-item">
+              <a href="#section-2" class="header-element nav-button">Section 2</a>
+            </div>
+            <div class="header-nav-item">
+              <a href="#section-3" class="header-element nav-button">Section 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button mat-flat-button color="primary" class="btn-primary custom-btn-style">Button</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main-page" role="main">
+    <div class="sections">
+      <section id="home" class="page-section">
+        <div class="section-border">
+          <div class="section-background">
+            <img class="top-image" src="https://images.squarespace-cdn.com/content/v1/624b503b5d73881124e70a24/1649102923989-HOTX3VP5FFBFQY94VTYO/Stocksy_comp_2793634.jpg" alt="Mental Health">
+            <div class="bg-overlay"></div>
+          </div>
+          <div class="content-wrapper">
+            <div class="top-content">
+              <h2>Introducing a mental health collective.</h2>
+              <p>Get accessible and personalized mental healthcare in-person or from the comfort of your home. </p>
+            </div>
+            <div class="top-content-actions">
+              <button mat-flat-button color="primary" class="btn-primary custom-btn-style">Button 2</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div id="section-1" class="container translated-element">
+          <h2>Sction 1</h2>
+          <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div id="section-2" class="container translated-element">
+          <h2>Section 2</h2>
+          <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div id="section-3" class="container translated-element">
+          <h2>Section 3</h2>
+          <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
+        </div>
+      </section>
+    </div>
+  </main>
 </div>
 
-<div role="footer">
-  <div>footer</div>
-</div>
+<footer id="footer" class="footer">
+  <div id="section-3" class="container" role="footer">
+    <div>footer</div>
+  </div>
+</footer>
