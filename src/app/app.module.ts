@@ -1,25 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { MatButtonModule } from '@angular/material/button';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
 
-const materialModuls = [
-  MatButtonModule,
-  MatSlideToggleModule
-]
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { AboutSectionComponent } from './components/main-page/components/about-section/about-section.component';
+import { ServicesSectionComponent } from './components/main-page/components/services-section/services-section.component';
+import { ContactSectionComponent } from './components/main-page/components/contact-section/contact-section.component';
+import { HomeSectionComponent } from './components/main-page/components/home-section/home-section.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainPageComponent,
+    AboutSectionComponent,
+    ServicesSectionComponent,
+    ContactSectionComponent,
+    HomeSectionComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    materialModuls
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

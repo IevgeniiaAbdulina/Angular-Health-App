@@ -1,78 +1,11 @@
 <div class="page-wrapper">
   <header id="header" role="header">
-    <div class="navbar-top">
-      <div class="navbar-inner-content">
-        <div class="header-title-nav-wrapper">
-          <div class="header-title">
-            <a href="#home"><b>MH</b> Mental Health website</a>
-          </div>
-          <div class="header-nav">
-            <div class="header-nav-item">
-              <a href="#section-1" class="header-element nav-button">Section 1</a>
-            </div>
-            <div class="header-nav-item">
-              <a href="#section-2" class="header-element nav-button">Section 2</a>
-            </div>
-            <div class="header-nav-item">
-              <a href="#section-3" class="header-element nav-button">Section 3</a>
-            </div>
-          </div>
-        </div>
-        <div class="header-actions">
-          <button mat-flat-button color="primary" class="btn-primary custom-btn-style">Button</button>
-        </div>
-      </div>
-    </div>
+    <app-header></app-header>
   </header>
   <main id="main-page" role="main">
-    <div class="sections">
-      <section id="home" class="page-section">
-        <div class="section-border">
-          <div class="section-background">
-            <img class="top-image" src="https://images.squarespace-cdn.com/content/v1/624b503b5d73881124e70a24/1649102923989-HOTX3VP5FFBFQY94VTYO/Stocksy_comp_2793634.jpg" alt="Mental Health">
-            <div class="bg-overlay"></div>
-          </div>
-          <div class="content-wrapper">
-            <div class="top-content">
-              <h2>Introducing a mental health collective.</h2>
-              <p>Get accessible and personalized mental healthcare in-person or from the comfort of your home. </p>
-            </div>
-            <div class="top-content-actions">
-              <button mat-flat-button color="primary" class="btn-primary custom-btn-style">Button 2</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page-section">
-        <div id="section-1" class="container translated-element">
-          <h2>Sction 1</h2>
-          <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
-        </div>
-      </section>
-
-      <section class="page-section">
-        <div id="section-2" class="container translated-element">
-          <h2>Section 2</h2>
-          <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
-        </div>
-      </section>
-
-      <section class="page-section">
-        <div id="section-3" class="container translated-element">
-          <h2>Section 3</h2>
-          <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
-        </div>
-      </section>
-    </div>
+    <app-main-page></app-main-page>
   </main>
 </div>
-
-<footer id="footer" class="footer">
-  <div id="section-3" class="container" role="footer">
-    <div>footer</div>
-  </div>
+<footer id="footer" role="footer">
+  <app-footer></app-footer>
 </footer>

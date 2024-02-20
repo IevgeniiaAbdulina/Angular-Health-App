@@ -1,0 +1,54 @@
+
+.navbar-top {
+  position: relative;
+  width: 100%;
+  padding: 1.5vw 4vw;
+}
+
+.navbar-inner-content {
+  width: 100%;
+  height: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-title-nav-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 0 67%;
+  align-items: center;
+}
+
+.header-title {
+  margin-right: 3vw;
+  flex: 0 0 auto;
+}
+
+.header-nav {
+  margin-left: auto;
+  margin-right: 3vw;
+  flex: 0 1 auto;
+}
+
+.header-nav-item {
+  display: inline-flex;
+  font-size: 1em;
+  margin-right: 1.5vw;
+}
+
+.header-element {
+  text-decoration: none;
+}
+
+.header-nav-item a {
+  color: var(--bright-1);
+  padding: 0.1em 0;
+}
+
+.header-actions {
+  flex: 0 1 auto;
+  display: inline-flex;
+  align-items: center;
+  color: var(--bright-1);
+}

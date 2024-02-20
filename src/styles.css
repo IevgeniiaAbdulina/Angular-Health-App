@@ -221,9 +221,7 @@ a:hover {
 }
 
 /* ============================================
-*
 *             Page Layout Style
-*
 *  ============================================ */
 
 .page-wrapper {
@@ -248,60 +246,6 @@ header {
   z-index: 10;
 }
 
-.navbar-top {
-  position: relative;
-  width: 100%;
-  padding: 1.5vw 4vw;
-}
-
-.navbar-inner-content {
-  width: 100%;
-  height: inherit;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.header-title-nav-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  flex: 1 0 67%;
-  align-items: center;
-}
-
-.header-title {
-  margin-right: 3vw;
-  flex: 0 0 auto;
-}
-
-.header-nav {
-  margin-left: auto;
-  margin-right: 3vw;
-  flex: 0 1 auto;
-}
-
-.header-nav-item {
-  display: inline-flex;
-  font-size: 1em;
-  margin-right: 1.5vw;
-}
-
-.header-element {
-  text-decoration: none;
-}
-
-.header-nav-item a {
-  color: var(--bright-1);
-  padding: 0.1em 0;
-}
-
-.header-actions {
-  flex: 0 1 auto;
-  display: inline-flex;
-  align-items: center;
-  color: var(--bright-1);
-}
-
 #main-page {
   display: flex;
   flex-direction: column;
@@ -312,82 +256,10 @@ header {
   padding: var(--site-gutter);
 }
 
-.sections {
-  position: relative;
-  flex-grow: 1;
-}
-
 section {
   position: relative;
   padding-top: 100px;
   min-height: 100vh;
   display: flex;
   overflow: auto;
-}
-
-.section-border,
-.section-background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.section-background,
-.bg-overlay {
-  opacity: 0.8;
-  background-color: var(--dark-1);
-}
-
-.section-background img {
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-img {
-  display: block;
-  border-style: none;
-  object-position: 50% 50%;
-}
-
-.content-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  padding-top: 20vmax;
-  padding-right: var(--site-gutter);
-  padding-bottom: 4vw;
-  padding-left: var(--site-gutter);
-
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.top-content {
-  width: 60%;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
-  min-height: 24px;
-  color: var(--bright-1);
-}
-
-.top-content h2,
-.top-content p {
-  white-space: pre-wrap;
-  margin-bottom: 0;
-}
-
-.top-content-actions {
-  z-index: 10;
 }

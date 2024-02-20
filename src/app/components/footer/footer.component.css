@@ -1,0 +1,4 @@
+div[role=footer] {
+  background-color: var(--dark-2);
+  color: var(--light-1);
+}
