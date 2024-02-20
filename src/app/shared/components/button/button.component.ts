@@ -7,14 +7,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() customClassList?: string;
-  // @Input() customAttribute = '';
-  // @Input() customColor = '';
   @Input() isDisabledButton?: boolean;
 
   @Output() buttonClick = new EventEmitter();
 
   onClick(event: Event): void {
     this.buttonClick.emit(event);
-    console.log(event)
   }
 }

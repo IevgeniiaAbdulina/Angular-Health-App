@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';
 
 import { MatButtonModule } from '@angular/material/button';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
 
 const materialModuls = [
   MatButtonModule,
-  MatSlideToggleModule
+  MatCardModule
 ]
 
 @NgModule({
