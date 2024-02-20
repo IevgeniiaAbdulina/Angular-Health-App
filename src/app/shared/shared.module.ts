@@ -19,7 +19,8 @@ const materialModuls = [
     materialModuls
   ],
   exports: [
-    materialModuls
+    materialModuls,
+    ButtonComponent
   ]
 })
 export class SharedModule { }

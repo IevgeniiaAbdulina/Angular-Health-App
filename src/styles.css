@@ -141,33 +141,13 @@ p {
   font-size: var(--paragraph-3);
 }
 
-  /* Buttons */
+/* Buttons */
 button.mat-mdc-button-base {
   font-family: var(--font-open-sans);
   font-weight: var(--weight-regular);
   font-style: normal;
   letter-spacing: 0.1em;
   padding: var(--btn-padding-y) var(--btn-padding-x);
-}
-/* CUSTOM BUTTON STYLE */
-button.mat-mdc-button-base.custom-btn-style {
-  text-transform: uppercase;
-  border-radius: unset;
-  background-color: var(--bright-2);
-  color: var(--bright-1);
-  transition: .1s opacity linear;
-}
-  /* PRIMARY BUTTON */
-.btn-primary {
-  font-size: var(--btn-primary-size);
-}
-  /* SECONDARY BUTTON */
-  button.btn-secondary.mat-mdc-button-base {
-  font-size: var(--btn-secondary-size);
-}
-  /* TERTIARY BUTTON */
-  button.btn-tertiary.mat-mdc-button-base {
-  font-size: var(--btn-tertiary-size);
 }
 
   /* Miscellaneous */

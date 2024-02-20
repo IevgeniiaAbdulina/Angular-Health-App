@@ -10,7 +10,11 @@
         <p>Get accessible and personalized mental healthcare in-person or from the comfort of your home. </p>
       </div>
       <div class="top-content-actions">
-        <button mat-flat-button color="primary" class="btn-primary custom-btn-style">Button 2</button>
+        <app-button
+          [customClassList]="'btn-primary custom-btn-style'"
+          [isDisabledButton]="false">
+          Schedule an Appointment
+        </app-button>
       </div>
     </div>
   </div>
