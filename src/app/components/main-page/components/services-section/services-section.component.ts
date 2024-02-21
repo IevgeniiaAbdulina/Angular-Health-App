@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./services-section.component.css']
 })
 export class ServicesSectionComponent {
+  items = ['What I do - 1', 'What I do - 2', 'What I do - 3', 'What I do - 4', 'What I do - 5'];
 
+  panelOpenState = false;
 }

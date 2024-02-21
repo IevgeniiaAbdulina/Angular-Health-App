@@ -4,10 +4,14 @@ import { ButtonComponent } from './components/button/button.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 const materialModuls = [
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
+  CdkAccordionModule,
+  MatExpansionModule
 ]
 
 @NgModule({

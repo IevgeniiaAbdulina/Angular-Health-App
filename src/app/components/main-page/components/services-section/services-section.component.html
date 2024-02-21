@@ -1,7 +1,36 @@
 <section class="page-section">
   <div id="section-2" class="container translated-element">
-    <h2>Section 2</h2>
-    <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
+    <div class="section-header">
+      <h3>WHAT I DO</h3>
+      <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.</p>
+    </div>
+    <div class="section-content">
+      <div class="content-item">
+        <div class="content-item-wrap">
+          <img src="https://assets-global.website-files.com/6399ec1545e218ece386c9b6/639a233e91041c4f04f84bd6_pexels-cottonbro-studio-4098221%201.webp" alt="workplace image">
+        </div>
+      </div>
+      <div class="content-item">
+        <p class="paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan. Integer interdum mauris eget consectetur ornare. </p>
+        <div class="content-options">
+          <mat-accordion>
+            <mat-expansion-panel class="accordion-item"
+              *ngFor="let item of items"
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title class="accordion-item-title">
+                  {{ item }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan. Integer interdum mauris eget consectetur ornare.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <app-button [customClassList]="'btn-tertiary custom-btn-style'"
+      [isDisabledButton]="false">View more information</app-button>
+      </div>
+    </div>
   </div>
 </section>
