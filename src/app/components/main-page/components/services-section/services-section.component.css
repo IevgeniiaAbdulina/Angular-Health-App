@@ -1,30 +1,13 @@
 .section-header {
-  display: flex;
   flex-direction: column;
-}
-
-.section-content {
-  display: flex;
-  gap: 1em;
-  margin-top: 4em;
 }
 
 .accordion-item {
   margin-bottom: 20px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .content-options {
   margin-bottom: 40px;
-}
-
-h3 {
-  margin-bottom: 1em;
-  color: var(--bright-2);
 }
 
 .content-item {
@@ -56,17 +39,8 @@ img {
 }
 
 @media (max-width: 900px) {
-  .section-header {
-    align-items: center;
-  }
-
   .section-header > p {
     text-align: center;
-  }
-
-  .section-content {
-    flex-direction: column;
-    flex: 1;
   }
 
   .content-item-wrap {

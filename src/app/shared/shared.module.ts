@@ -6,12 +6,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
 
 const materialModuls = [
   MatButtonModule,
   MatCardModule,
   CdkAccordionModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatIconModule
 ]
 
 @NgModule({
