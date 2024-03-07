@@ -114,6 +114,21 @@ body,
   font-size: var(--heading-4);
 }
 
+@media (max-width: 900px) {
+  .mat-typography h1 {
+    font-size: 3rem;
+  }
+  .mat-typography h2 {
+    font-size: 2.5rem;
+  }
+  .mat-typography h3 {
+    font-size: 1.75rem;
+  }
+  .mat-typography h4 {
+    font-size: 1.25rem;
+  }
+}
+
   /* Paragraphs */
 p {
   font-family: var(--font-open-sans);
