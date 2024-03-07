@@ -12,6 +12,7 @@ import { AboutSectionComponent } from './components/main-page/components/about-s
 import { ServicesSectionComponent } from './components/main-page/components/services-section/services-section.component';
 import { ContactSectionComponent } from './components/main-page/components/contact-section/contact-section.component';
 import { HomeSectionComponent } from './components/main-page/components/home-section/home-section.component';
+import { MenuComponent } from './components/header/components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeSectionComponent } from './components/main-page/components/home-sec
     AboutSectionComponent,
     ServicesSectionComponent,
     ContactSectionComponent,
-    HomeSectionComponent
+    HomeSectionComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
