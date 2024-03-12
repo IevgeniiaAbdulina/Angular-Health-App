@@ -218,7 +218,7 @@ a:hover {
   min-height: 100vh;
 }
 
-.page-wrapper section:not(#section-home) {
+.page-wrapper section:not(#home) {
   max-width: var(--page-width-max);
   margin: 0 auto;
 }
