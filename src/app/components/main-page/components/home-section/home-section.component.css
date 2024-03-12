@@ -1,5 +1,5 @@
-.section-border,
-.section-background {
+.section-background,
+.bg-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -8,9 +8,8 @@
   overflow: hidden;
 }
 
-.section-background,
 .bg-overlay {
-  opacity: 0.8;
+  opacity: 0.4;
   background-color: var(--dark-1);
 }
 
@@ -48,7 +47,6 @@ img {
 
 .top-content {
   width: 60%;
-  min-height: 24px;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;

@@ -93,7 +93,7 @@ body,
 .mat-typography h3,
 .mat-typography h4 {
   font-family: var(--font-cormorant);
-  font-weight: var(--weight-regular);;
+  font-weight: var(--weight-medium);
   font-style: normal;
   line-height: var(--heading-line-height);
   letter-spacing: var(--heading-letter-spacing);
@@ -218,7 +218,7 @@ a:hover {
   min-height: 100vh;
 }
 
-.page-wrapper section:not(#home) {
+.page-wrapper section:not(#section-home) {
   max-width: var(--page-width-max);
   margin: 0 auto;
 }
@@ -246,15 +246,6 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-}
-
-section {
-  position: relative;
-  padding-top: 100px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .section-header {

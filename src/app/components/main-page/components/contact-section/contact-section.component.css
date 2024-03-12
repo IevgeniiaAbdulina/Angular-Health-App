@@ -41,7 +41,8 @@ mat-icon {
 }
 
 .appointment-block {
-  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .google-map {

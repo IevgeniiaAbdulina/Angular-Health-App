@@ -1,5 +1,19 @@
-
 .sections {
   position: relative;
   flex-grow: 1;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#section-home {
+  min-height: 100vh;
+}
+
+#section-about {
+  padding-top: 2em;
 }
