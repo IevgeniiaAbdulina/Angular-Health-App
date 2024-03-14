@@ -4,18 +4,18 @@
     <mat-sidenav #sidenav [mode]="'over'" position="end">
       <div class="sidenav-wrapper">
         <div class="sidenav-header" *ngIf="sidenav">
-          <a href="#home" (click)="sidenav.toggle()">Mental Health</a>
+          <a (click)="onClick('home')">Mental Health</a>
           <button mat-icon-button (click)="sidenav.toggle()"><mat-icon class="btn-close">close</mat-icon></button>
         </div>
         <div class="nav-list">
           <mat-nav-list>
             <p class="nav-list-item" *ngFor="let nav of fillerNav; index as i">
-              <a mat-list-item href="#section-{{i+1}}" (click)="sidenav.toggle()">
+              <a mat-list-item (click)="onClick('section-', i+1)">
                 <span class="custopm-nav-list-item">{{ nav }}</span>
               </a>
             </p>
           </mat-nav-list>
-          <app-button
+          <app-button (click)="sidenav.toggle()" routerLink="appointment"
               [customClassList]="'btn-primary custom-btn-style'"
               [isDisabledButton]="false">
               umów wizytę

@@ -2,22 +2,22 @@
   <div class="navbar-inner-content">
     <div class="header-title-nav-wrapper">
       <div class="header-title">
-        <a href="#home">Mental Health</a>
+        <a (click)="onClick('home')">Mental Health</a>
       </div>
       <div class="header-nav">
         <div class="header-nav-item">
-          <a href="#section-1" class="header-element nav-button">Oferta</a>
+          <a (click)="onClick('section-1')" class="header-element nav-button button-link">Oferta</a>
         </div>
         <div class="header-nav-item">
-          <a href="#section-2" class="header-element nav-button">Zakres pomocy</a>
+          <a (click)="onClick('section-2')" class="header-element nav-button button-link">Zakres pomocy</a>
         </div>
         <div class="header-nav-item">
-          <a href="#section-3" class="header-element nav-button">Kontakt</a>
+          <a (click)="onClick('section-3')" class="header-element nav-button button-link">Kontakt</a>
         </div>
       </div>
     </div>
     <div class="header-actions">
-      <app-button
+      <app-button routerLink="appointment"
         [customClassList]="'btn-primary custom-btn-style'"
         [isDisabledButton]="false">
         umów wizytę

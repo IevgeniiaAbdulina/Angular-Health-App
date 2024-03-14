@@ -13,6 +13,10 @@ import { ServicesSectionComponent } from './components/main-page/components/serv
 import { ContactSectionComponent } from './components/main-page/components/contact-section/contact-section.component';
 import { HomeSectionComponent } from './components/main-page/components/home-section/home-section.component';
 import { MenuComponent } from './components/header/components/menu/menu.component';
+import { AppointmentPageComponent } from './components/appointment-page/appointment-page.component';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +28,15 @@ import { MenuComponent } from './components/header/components/menu/menu.componen
     ServicesSectionComponent,
     ContactSectionComponent,
     HomeSectionComponent,
-    MenuComponent
+    MenuComponent,
+    AppointmentPageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RouterModule,
+    RouterModule.forRoot(routes, { anchorScrolling: 'enabled'}),
     SharedModule
   ],
   providers: [],
