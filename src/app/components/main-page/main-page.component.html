@@ -1,22 +1,32 @@
-<div class="sections">
-  <section id="home">
-    <div class="container">
-      <app-home-section></app-home-section>
+<div class="page-wrapper">
+  <header id="header" role="header">
+    <app-header></app-header>
+  </header>
+  <main id="main-page" role="main">
+    <div class="sections">
+      <section id="home">
+        <div class="container">
+          <app-home-section></app-home-section>
+        </div>
+      </section>
+      <section id="section-1">
+        <div class="container translated-element">
+          <app-about-section></app-about-section>
+        </div>
+      </section>
+      <section id="section-2">
+        <div class="container translated-element">
+          <app-services-section></app-services-section>
+        </div>
+      </section>
+      <section id="section-3">
+        <div class="container translated-element">
+          <app-contact-section></app-contact-section>
+        </div>
+      </section>
     </div>
-  </section>
-  <section id="section-1">
-    <div class="container translated-element">
-      <app-about-section></app-about-section>
-    </div>
-  </section>
-  <section id="section-2">
-    <div class="container translated-element">
-      <app-services-section></app-services-section>
-    </div>
-  </section>
-  <section id="section-3">
-    <div class="container translated-element">
-      <app-contact-section></app-contact-section>
-    </div>
-  </section>
+  </main>
 </div>
+<footer id="footer" role="footer">
+  <app-footer></app-footer>
+</footer>

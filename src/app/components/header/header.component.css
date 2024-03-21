@@ -24,6 +24,7 @@
 .header-title {
   margin-right: 3vw;
   flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .header-title > a {

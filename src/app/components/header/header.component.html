@@ -2,7 +2,7 @@
   <div class="navbar-inner-content">
     <div class="header-title-nav-wrapper">
       <div class="header-title">
-        <a (click)="onClick('home')">Mental Health</a>
+        <a routerLink="/home" (click)="onClick('home')">Mental Health</a>
       </div>
       <div class="header-nav">
         <div class="header-nav-item">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="header-actions">
-      <app-button routerLink="appointment"
+      <app-button routerLink="/appointment"
         [customClassList]="'btn-primary custom-btn-style'"
         [isDisabledButton]="false">
         umów wizytę
