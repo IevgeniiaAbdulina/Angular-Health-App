@@ -18,3 +18,8 @@
   .btn-tertiary {
     font-size: var(--btn-tertiary-size);
   }
+
+  button.mat-mdc-button-base.custom-btn-style:disabled {
+    background-color: var(--light-2);
+    color: var(--dark-2);
+  }

@@ -1,0 +1,51 @@
+<form class="form-element" formGroupName="contactForm" (ngSubmit)="onSubmit()">
+  <p for="name">Imię i nazwisko</p>
+  <mat-form-field class="form-field-item" appearance="outline">
+    <input
+      matInput
+      id="name"
+      type="text"
+      formControlName="name"
+      required>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="form-field-item" appearance="outline">
+    <mat-label for="email">Adres e-mail</mat-label>
+    <input
+      matInput
+      id="email"
+      type="email"
+      formControlName="email"
+      required>
+    <mat-error *ngIf="contactForm.invalid">{{ contactForm.errors }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form-field-item" appearance="outline">
+    <mat-label for="phoneNumber">Telefon komórkowy</mat-label>
+    <input
+      matInput
+      placeholder="my@example.com"
+      id="phoneNumber"
+      type="number"
+      formControlName="phoneNumber"
+      required>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="form-field-item" appearance="outline">
+    <label for="message-text">Wiadomość</label>
+    <textarea matInput id="message-text" type="text" formControlName="messageText"></textarea>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+
+  <app-button
+    type="submit"
+    [customClassList]="'btn-tertiary custom-btn-style'"
+    [isDisabledButton]="!contactForm.valid">
+    Przejdź do podsumowania
+  </app-button>
+</form>
+<br>
+<p>Form STATUS: {{ contactForm.status }}</p>
+<p>Form DATA: {{ contactForm.value }}</p>

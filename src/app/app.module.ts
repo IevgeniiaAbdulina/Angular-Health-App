@@ -17,6 +17,7 @@ import { AppointmentPageComponent } from './components/appointment-page/appointm
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ContactFormComponent } from './components/appointment-page/components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HomeSectionComponent,
     MenuComponent,
     AppointmentPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
