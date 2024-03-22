@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ContactFormComponent } from './components/appointment-page/components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ContactFormComponent } from './components/appointment-page/components/c
     BrowserAnimationsModule,
     RouterModule,
     RouterModule.forRoot(routes, { anchorScrolling: 'enabled'}),
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

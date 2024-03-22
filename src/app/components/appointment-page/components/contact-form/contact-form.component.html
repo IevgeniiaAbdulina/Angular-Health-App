@@ -1,51 +1,79 @@
-<form class="form-element" formGroupName="contactForm" (ngSubmit)="onSubmit()">
-  <p for="name">Imię i nazwisko</p>
+<form class="form-element" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+  <p class="paragraph-1">
+    {{ contactFormFields['name'].label | titlecase }}
+    <span> *</span>
+  </p>
   <mat-form-field class="form-field-item" appearance="outline">
     <input
       matInput
-      id="name"
-      type="text"
+      id="{{ contactFormFields['name'].id }}"
+      type="{{ contactFormFields['name'].type }}"
       formControlName="name"
+      placeholder="{{ contactFormFields['name'].placeholder }}"
       required>
-    <mat-hint>Hint</mat-hint>
+    <mat-error *ngIf="contactForm.invalid">
+      {{ contactFormFields['name'].errorMessage }}
+    </mat-error>
   </mat-form-field>
 
+  <p class="paragraph-1">
+    {{ contactFormFields['email'].label | titlecase }}
+    <span> *</span>
+  </p>
   <mat-form-field class="form-field-item" appearance="outline">
-    <mat-label for="email">Adres e-mail</mat-label>
     <input
       matInput
-      id="email"
-      type="email"
+      id="{{ contactFormFields['email'].id }}"
+      type="{{ contactFormFields['email'].type }}"
       formControlName="email"
+      placeholder=" {{ contactFormFields['email'].placeholder }}"
       required>
-    <mat-error *ngIf="contactForm.invalid">{{ contactForm.errors }}</mat-error>
+    <mat-error *ngIf="contactForm.invalid">
+      {{ contactFormFields['email'].errorMessage }}
+    </mat-error>
   </mat-form-field>
 
+  <p class="paragraph-1">
+    {{ contactFormFields['phone'].label | titlecase }}
+    <span> *</span>
+  </p>
   <mat-form-field class="form-field-item" appearance="outline">
-    <mat-label for="phoneNumber">Telefon komórkowy</mat-label>
     <input
       matInput
-      placeholder="my@example.com"
-      id="phoneNumber"
-      type="number"
-      formControlName="phoneNumber"
+      id="{{ contactFormFields['phone'].id }}"
+      type="{{ contactFormFields['phone'].type }}"
+      formControlName="phone"
+      placeholder="{{ contactFormFields['phone'].placeholder }}"
       required>
-    <mat-hint>Hint</mat-hint>
+    <mat-error *ngIf="contactForm.invalid">
+      {{ contactFormFields['phone'].errorMessage }}
+    </mat-error>
   </mat-form-field>
 
+  <p class="paragraph-1">{{ contactFormFields['message'].label| titlecase }}</p>
   <mat-form-field class="form-field-item" appearance="outline">
-    <label for="message-text">Wiadomość</label>
-    <textarea matInput id="message-text" type="text" formControlName="messageText"></textarea>
-    <mat-hint>Hint</mat-hint>
+    <textarea
+      matInput
+      id="{{ contactFormFields['message'].id }}"
+      type="{{ contactFormFields['message'].type }}"
+      formControlName="message"
+      placeholder="{{ contactFormFields['message'].placeholder }}">
+    </textarea>
+    <mat-error *ngIf="contactForm.invalid">
+      {{ contactFormFields['message'].errorMessage }}
+    </mat-error>
   </mat-form-field>
 
-  <app-button
-    type="submit"
-    [customClassList]="'btn-tertiary custom-btn-style'"
-    [isDisabledButton]="!contactForm.valid">
-    Przejdź do podsumowania
-  </app-button>
+  <div class="form-actions">
+    <app-button
+      type="submit"
+      [customClassList]="'btn-primary custom-btn-style'"
+      [isDisabledButton]="false"
+      (click)="onSubmit()">
+      Przejdź do podsumowania
+    </app-button>
+  </div>
 </form>
 <br>
 <p>Form STATUS: {{ contactForm.status }}</p>
-<p>Form DATA: {{ contactForm.value }}</p>

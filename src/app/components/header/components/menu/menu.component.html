@@ -4,7 +4,7 @@
     <mat-sidenav #sidenav [mode]="'over'" position="end">
       <div class="sidenav-wrapper">
         <div class="sidenav-header" *ngIf="sidenav">
-          <a (click)="onClick('home')">Mental Health</a>
+          <a  routerLink="/home" (click)="onClick('home')">Mental Health</a>
           <button mat-icon-button (click)="sidenav.toggle()"><mat-icon class="btn-close">close</mat-icon></button>
         </div>
         <div class="nav-list">
@@ -15,7 +15,7 @@
               </a>
             </p>
           </mat-nav-list>
-          <app-button (click)="sidenav.toggle()" routerLink="appointment"
+          <app-button (click)="sidenav.toggle()" routerLink="/appointment"
               [customClassList]="'btn-primary custom-btn-style'"
               [isDisabledButton]="false">
               umów wizytę
