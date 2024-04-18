@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ButtonComponent {
   @Input() customClassList?: string;
   @Input() isDisabledButton?: boolean;
+  @Input() typeButton?: string;
 
   @Output() buttonClick = new EventEmitter();
 

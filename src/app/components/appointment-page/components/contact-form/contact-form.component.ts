@@ -1,18 +1,11 @@
 import { Component } from '@angular/core';
-import { FormBuilder, MinLengthValidator, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
-interface formControl {
-  controlName: string;
-  id: string;
-  type: string;
-  placeholder: string;
-  label: string;
-  errorMessage: string;
-}
-
-interface formObj {
-  [control: string]: formControl;
-}
+import { ContactFormFields } from '../../models/contact-form';
+import { NameField } from '../../models/name-field';
+import { EmailField } from '../../models/email-field';
+import { PhoneField } from '../../models/phone-field';
+import { MessageField } from '../../models/message-field';
 
 @Component({
   selector: 'app-contact-form',
@@ -20,51 +13,47 @@ interface formObj {
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent {
-  contactFormFields: formObj = {
-    name: {
-      controlName: 'name',
-      id: 'name',
-      type: 'text',
-      placeholder: 'Wpisz swoje imię i nazwisko',
-      label: 'Imię i nazwisko',
-      errorMessage: 'Coś poszło nie tak. Spróbuj ponownie.'
-    },
-    email: {
-      controlName: 'email',
-      id: 'email',
-      type: 'email',
-      placeholder: 'Wprowadź adres e-mail',
-      label: 'Adres e-mail',
-      errorMessage: 'Coś poszło nie tak. Spróbuj ponownie.'
-    },
-    phone: {
-      controlName: 'phone',
-      id: 'phone',
-      type: 'number',
-      placeholder: 'Wpisz numer telefonu',
-      label: 'Telefon komórkowy',
-      errorMessage: 'Coś poszło nie tak. Spróbuj ponownie.'
-    },
-    message: {
-      controlName: 'message',
-      id: 'message',
-      type: 'text',
-      placeholder: 'Wpisz swoją wiadomość...',
-      label: 'Wiadomość',
-      errorMessage: 'Wiadomość jest za długa.'
-    }
-  }
+  contactFormFields: ContactFormFields = {
+    name: new NameField,
+    email: new EmailField,
+    phone: new PhoneField,
+    message: new MessageField,
+  };
 
   contactForm = this.formBuilder.group({
-    name: ['', Validators.required],
-    email: ['', Validators.required ],
-    phone: ['', Validators.required ],
+    name: ['', [
+      Validators.required,
+      Validators.minLength(4),
+      Validators.pattern('^[a-zA-Z \-]*$')
+    ]],
+    email: ['', [
+      Validators.required,
+      Validators.email
+    ]],
+    phone: ['', [
+      Validators.required,
+      Validators.minLength(9),
+      Validators.maxLength(10)
+    ]],
     message: ['']
   })
+
+  get name() {
+    return this.contactForm.get('name');
+  }
+
+  get email() {
+    return this.contactForm.get('email');
+  }
+
+  get phone() {
+    return this.contactForm.get('phone');
+  }
 
   constructor(private formBuilder: FormBuilder) {}
 
   onSubmit(): void {
-    console.log(this.contactForm.value)
+    console.log(this.contactForm.value);
+    this.contactForm.reset();
   }
 }

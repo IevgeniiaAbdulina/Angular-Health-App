@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.form-field-item {
+  margin-bottom: 1.5em;
+}
+
 .form-actions {
   margin: 2em 0;
 }

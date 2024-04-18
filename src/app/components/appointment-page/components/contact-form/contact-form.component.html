@@ -1,7 +1,7 @@
 <form class="form-element" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
   <p class="paragraph-1">
-    {{ contactFormFields['name'].label | titlecase }}
+    {{ contactFormFields.name.label| titlecase }}
     <span> *</span>
   </p>
   <mat-form-field class="form-field-item" appearance="outline">
@@ -11,9 +11,14 @@
       type="{{ contactFormFields['name'].type }}"
       formControlName="name"
       placeholder="{{ contactFormFields['name'].placeholder }}"
-      required>
-    <mat-error *ngIf="contactForm.invalid">
+      required
+      autocomplete="off">
+
+    <mat-error *ngIf="name?.invalid && (name?.dirty || name?.touched)">
       {{ contactFormFields['name'].errorMessage }}
+      <p *ngIf="name?.errors?.['required']">* Name is required.</p>
+      <p *ngIf="name?.errors?.['minlength']">* Name must be at least 4 characters long.</p>
+      <p *ngIf="name?.errors?.['pattern']">* Name should contain only letters.</p>
     </mat-error>
   </mat-form-field>
 
@@ -28,9 +33,12 @@
       type="{{ contactFormFields['email'].type }}"
       formControlName="email"
       placeholder=" {{ contactFormFields['email'].placeholder }}"
-      required>
-    <mat-error *ngIf="contactForm.invalid">
+      required
+      autocomplete="off">
+
+    <mat-error *ngIf="email?.invalid && (email?.dirty || email?.touched)">
       {{ contactFormFields['email'].errorMessage }}
+      <p *ngIf="email?.errors?.['required']">* Email is required.</p>
     </mat-error>
   </mat-form-field>
 
@@ -45,9 +53,14 @@
       type="{{ contactFormFields['phone'].type }}"
       formControlName="phone"
       placeholder="{{ contactFormFields['phone'].placeholder }}"
-      required>
-    <mat-error *ngIf="contactForm.invalid">
+      required
+      max="1000000000"
+      autocomplete="off">
+
+    <mat-error *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)">
       {{ contactFormFields['phone'].errorMessage }}
+      <p *ngIf="phone?.errors?.['required']">* Phone number is required.</p>
+      <p *ngIf="phone?.errors?.['minlength'] || phone?.errors?.['maxlength']">* Phone number should contain 9 digits.</p>
     </mat-error>
   </mat-form-field>
 
@@ -60,20 +73,14 @@
       formControlName="message"
       placeholder="{{ contactFormFields['message'].placeholder }}">
     </textarea>
-    <mat-error *ngIf="contactForm.invalid">
-      {{ contactFormFields['message'].errorMessage }}
-    </mat-error>
   </mat-form-field>
 
   <div class="form-actions">
     <app-button
-      type="submit"
+      typeButton="submit"
       [customClassList]="'btn-primary custom-btn-style'"
-      [isDisabledButton]="false"
-      (click)="onSubmit()">
+      [isDisabledButton]="!contactForm.valid">
       Przejdź do podsumowania
     </app-button>
   </div>
 </form>
-<br>
-<p>Form STATUS: {{ contactForm.status }}</p>
