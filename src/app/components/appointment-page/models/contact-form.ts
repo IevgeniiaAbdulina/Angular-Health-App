@@ -1,8 +1,5 @@
 export interface ContactFormFields {
-  name: CustomFormControl;
-  email: CustomFormControl;
-  phone: CustomFormControl;
-  message: CustomFormControl;
+  [key: string]: CustomFormControl;
 }
 
 export interface CustomFormControl {
@@ -11,7 +8,9 @@ export interface CustomFormControl {
   type: string;
   placeholder: string;
   label: string;
-  errorMessage: ErrorMessage[]
+  errorMessage: ErrorMessage[];
+  typeField: string;
+  fieldID: number;
 }
 
 interface ErrorMessage {

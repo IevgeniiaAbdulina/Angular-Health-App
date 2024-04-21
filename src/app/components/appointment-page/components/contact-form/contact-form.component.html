@@ -1,86 +1,59 @@
-<form class="form-element" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<form action="submit" [formGroup]="clientContactForm" (ngSubmit)="onSubmitClientContactForm()">
+  <div class="form-group" *ngFor="let formField of contactFormFields | keyvalue: isOrder; let i = index">
+    <ng-container *ngIf="formField.value.typeField === 'input'; then inputField else textareaField "></ng-container>
+    <ng-template #inputField>
+      <p class="paragraph-1">
+        {{ formField.value.label| titlecase }}
+        <span class="required-icon"> *</span>
+      </p>
+      <mat-form-field class="form-field-item" appearance="outline">
+        <input
+          matInput
+          placeholder="{{ formField.value.placeholder }}"
+          formControlName="{{ formField.value.name }}"
+          id="{{ formField.value.id }}"
+          type="{{ formField.value.type }}"
+          required>
 
-  <p class="paragraph-1">
-    {{ contactFormFields.name.label| titlecase }}
-    <span> *</span>
-  </p>
-  <mat-form-field class="form-field-item" appearance="outline">
-    <input
-      matInput
-      id="{{ contactFormFields['name'].id }}"
-      type="{{ contactFormFields['name'].type }}"
-      formControlName="name"
-      placeholder="{{ contactFormFields['name'].placeholder }}"
-      required
-      autocomplete="off">
+        <mat-error *ngIf="f[formField.value.name]?.errors && f[formField.value.name]?.dirty || f[formField.value.name]?.touched">
+          <div *ngFor="let vlaidation of formField.value.errorMessage">
+            <p *ngIf="f[formField.value.name]?.hasError(vlaidation.type)">
+              {{ vlaidation.message }}
+            </p>
+          </div>
+        </mat-error>
+      </mat-form-field>
+    </ng-template>
 
-    <mat-error *ngIf="name?.invalid && (name?.dirty || name?.touched)">
-      {{ contactFormFields['name'].errorMessage }}
-      <p *ngIf="name?.errors?.['required']">* Name is required.</p>
-      <p *ngIf="name?.errors?.['minlength']">* Name must be at least 4 characters long.</p>
-      <p *ngIf="name?.errors?.['pattern']">* Name should contain only letters.</p>
-    </mat-error>
-  </mat-form-field>
+    <ng-template #textareaField>
+      <p class="paragraph-1">
+        {{ formField.value.label| titlecase }}
+      </p>
+      <mat-form-field class="form-field-item" appearance="outline">
+        <textarea
+          matInput
+          placeholder="{{ formField.value.placeholder }}"
+          formControlName="{{ formField.value.name }}"
+          id="{{ formField.value.id }}"
+          type="{{ formField.value.type }}"
+          #message
+          maxlength="1200">
+        </textarea>
 
-  <p class="paragraph-1">
-    {{ contactFormFields['email'].label | titlecase }}
-    <span> *</span>
-  </p>
-  <mat-form-field class="form-field-item" appearance="outline">
-    <input
-      matInput
-      id="{{ contactFormFields['email'].id }}"
-      type="{{ contactFormFields['email'].type }}"
-      formControlName="email"
-      placeholder=" {{ contactFormFields['email'].placeholder }}"
-      required
-      autocomplete="off">
-
-    <mat-error *ngIf="email?.invalid && (email?.dirty || email?.touched)">
-      {{ contactFormFields['email'].errorMessage }}
-      <p *ngIf="email?.errors?.['required']">* Email is required.</p>
-    </mat-error>
-  </mat-form-field>
-
-  <p class="paragraph-1">
-    {{ contactFormFields['phone'].label | titlecase }}
-    <span> *</span>
-  </p>
-  <mat-form-field class="form-field-item" appearance="outline">
-    <input
-      matInput
-      id="{{ contactFormFields['phone'].id }}"
-      type="{{ contactFormFields['phone'].type }}"
-      formControlName="phone"
-      placeholder="{{ contactFormFields['phone'].placeholder }}"
-      required
-      max="1000000000"
-      autocomplete="off">
-
-    <mat-error *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)">
-      {{ contactFormFields['phone'].errorMessage }}
-      <p *ngIf="phone?.errors?.['required']">* Phone number is required.</p>
-      <p *ngIf="phone?.errors?.['minlength'] || phone?.errors?.['maxlength']">* Phone number should contain 9 digits.</p>
-    </mat-error>
-  </mat-form-field>
-
-  <p class="paragraph-1">{{ contactFormFields['message'].label| titlecase }}</p>
-  <mat-form-field class="form-field-item" appearance="outline">
-    <textarea
-      matInput
-      id="{{ contactFormFields['message'].id }}"
-      type="{{ contactFormFields['message'].type }}"
-      formControlName="message"
-      placeholder="{{ contactFormFields['message'].placeholder }}">
-    </textarea>
-  </mat-form-field>
+        <mat-hint align="start">
+          <span>Wiadomość nie może być dłuższa niż 1200 znaków</span>
+        </mat-hint>
+        <mat-hint align="end">{{message.value.length}} / 1200</mat-hint>
+      </mat-form-field>
+    </ng-template>
+  </div>
 
   <div class="form-actions">
     <app-button
       typeButton="submit"
       [customClassList]="'btn-primary custom-btn-style'"
-      [isDisabledButton]="!contactForm.valid">
-      Przejdź do podsumowania
+      [isDisabledButton]="!clientContactForm.valid">
+      Wyślij wiadomość
     </app-button>
   </div>
 </form>

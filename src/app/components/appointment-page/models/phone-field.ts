@@ -19,5 +19,7 @@ export class PhoneField implements CustomFormControl {
       type: 'maxlength',
       message: 'Numer telefonu jest za długi.'
     }
-  ]
+  ];
+  typeField = 'input';
+  fieldID = 3;
 }

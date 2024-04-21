@@ -9,12 +9,17 @@ export class NameField implements CustomFormControl {
   errorMessage = [
     {
       type: 'required',
-      message: 'Coś poszło nie tak. Imię i nazwisko jest wymagane.' },
+      message: 'Imię i nazwisko jest wymagane.'
+    },
     {
       type: 'minlength',
-      message: 'Imię i nazwisko musi mieć co najmniej 4 znaki.' },
+      message: 'Imię i nazwisko musi mieć co najmniej 4 znaki.'
+    },
     {
       type: 'pattern',
-      message: 'Imię i nazwisko powinno zawierać wyłącznie litery.' }
-  ]
+      message: 'Imię i nazwisko powinno zawierać wyłącznie litery.'
+    }
+  ];
+  typeField = 'input';
+  fieldID = 1;
 }

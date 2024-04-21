@@ -12,4 +12,6 @@ export class MessageField implements CustomFormControl {
       message: 'Wiadomość jest za długa.'
     }
   ];
+  typeField = 'textarea';
+  fieldID = 4;
 }

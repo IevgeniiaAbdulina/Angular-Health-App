@@ -16,4 +16,6 @@ export class EmailField implements CustomFormControl {
       message: 'Adres e-mail powinien zawierać @.'
     }
   ];
+  typeField = 'input';
+  fieldID = 2;
 }
