@@ -39,7 +39,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule,
-    RouterModule.forRoot(routes, { anchorScrolling: 'enabled'}),
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled', // scrolls to the anchor element when the URL has a fragment
+      scrollPositionRestoration: 'enabled' // Scroll to top on Route Change
+    }),
     SharedModule,
     ReactiveFormsModule
   ],
