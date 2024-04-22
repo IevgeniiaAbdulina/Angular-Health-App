@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 import { ContactFormFields } from '../../models/contact-form';
 import { NameField } from '../../models/name-field';
 import { EmailField } from '../../models/email-field';
 import { PhoneField } from '../../models/phone-field';
 import { MessageField } from '../../models/message-field';
+import { CustomErrorStateMatcher } from '../../models/custom-error-state-matcher';
 
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.css']
+  styleUrls: ['./contact-form.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactFormComponent implements OnInit {
   clientContactForm: FormGroup = new FormGroup({
@@ -26,6 +28,10 @@ export class ContactFormComponent implements OnInit {
     phone: new PhoneField,
     message: new MessageField,
   };
+
+  // Error when invalid control is dirty, touched, or submitted.
+  // https://material.angular.io/components/input/overview#changing-when-error-messages-are-shown
+  matcher = new CustomErrorStateMatcher();
 
   constructor(private formBuilder: FormBuilder) {}
 
