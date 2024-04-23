@@ -30,6 +30,7 @@ export class ContactFormComponent implements OnInit {
   };
 
   // Error when invalid control is dirty, touched, or submitted.
+  // * Note: ErrorStateMatcher is only in angular material - and not a part of standard angular forms.
   // https://material.angular.io/components/input/overview#changing-when-error-messages-are-shown
   matcher = new CustomErrorStateMatcher();
 
@@ -75,8 +76,6 @@ export class ContactFormComponent implements OnInit {
   }
 
   onResetClientContactForm():void {
-    this.clientContactForm.markAsPristine();
-    this.clientContactForm.markAsUntouched();
     this.clientContactForm.reset();
   }
 }
