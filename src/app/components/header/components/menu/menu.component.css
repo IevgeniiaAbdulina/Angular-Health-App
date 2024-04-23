@@ -24,6 +24,11 @@
   color: var(--bright-2);
 }
 
+.sidenav-header > a {
+  display: flex;
+  align-items: center;
+}
+
 .btn-menu {
   color: var(--bright-1);
 }

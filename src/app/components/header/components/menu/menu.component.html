@@ -4,7 +4,9 @@
     <mat-sidenav #sidenav [mode]="'over'" position="end">
       <div class="sidenav-wrapper">
         <div class="sidenav-header" *ngIf="sidenav">
-          <a  routerLink="/home" (click)="onClick('home')">Mental Health</a>
+          <a  routerLink="/home" (click)="onClick('home')">
+            <img src="assets/imges/logo_primary_32.svg" alt="logo image">
+            Mental Health</a>
           <button mat-icon-button (click)="sidenav.toggle()"><mat-icon class="btn-close">close</mat-icon></button>
         </div>
         <div class="nav-list">

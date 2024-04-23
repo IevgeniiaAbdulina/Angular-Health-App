@@ -35,6 +35,11 @@
   color: var(--bright-1);
 }
 
+.header-title > a {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav {
   margin-left: auto;
   margin-right: 3vw;
