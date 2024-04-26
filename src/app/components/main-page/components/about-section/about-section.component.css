@@ -8,6 +8,12 @@ mat-card-header {
   padding: 16px 0 0;
 }
 
+.text-oneline {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 mat-card-content {
   margin-top: 1rem;
   padding: 0 0 16px;
