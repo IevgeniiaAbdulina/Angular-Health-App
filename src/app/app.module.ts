@@ -19,6 +19,8 @@ import { routes } from './app.routes';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ContactFormComponent } from './components/appointment-page/components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './components/appointment-page/services/contact.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuComponent,
     AppointmentPageComponent,
     PageNotFoundComponent,
-    ContactFormComponent
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,9 +46,10 @@ import { ReactiveFormsModule } from '@angular/forms';
       scrollPositionRestoration: 'enabled' // Scroll to top on Route Change
     }),
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

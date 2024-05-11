@@ -7,6 +7,7 @@ import { EmailField } from '../../models/email-field';
 import { PhoneField } from '../../models/phone-field';
 import { MessageField } from '../../models/message-field';
 import { CustomErrorStateMatcher } from '../../models/custom-error-state-matcher';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -34,7 +35,10 @@ export class ContactFormComponent implements OnInit {
   // https://material.angular.io/components/input/overview#changing-when-error-messages-are-shown
   matcher = new CustomErrorStateMatcher();
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private contactService: ContactService
+  ) {}
 
   ngOnInit(): void {
     this.clientContactForm = this.formBuilder.group({
@@ -71,7 +75,7 @@ export class ContactFormComponent implements OnInit {
       return;
     }
 
-    console.log(this.clientContactForm.value);
+    this.contactService.sendEmail(this.clientContactForm.value);
     this.onResetClientContactForm();
   }
 
