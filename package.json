@@ -1,10 +1,12 @@
 {
   "name": "angular-health-app",
   "version": "0.0.0",
+  "author": "Ievgeniia Abdulina",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run config && ng build",
+    "config": "ts-node src/environments/set-env.ts",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -21,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@emailjs/browser": "^4.3.3",
+    "dotenv": "^16.4.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
