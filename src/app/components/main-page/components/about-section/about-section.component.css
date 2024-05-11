@@ -3,6 +3,15 @@
   margin-left: auto;
 }
 
+.section-content {
+  gap: 1em;
+}
+
+.content-item {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
 mat-card-header {
   margin-bottom: 1rem;
   padding: 16px 0 0;
