@@ -1,7 +1,5 @@
 const fs = require('fs');
-const path = require('path');
 const dotenv = require('dotenv').config({path: 'src/environments/.env'});
-
 
   // `environment.ts` file structure
   const envFile  = `export const environment = {

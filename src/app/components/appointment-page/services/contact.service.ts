@@ -25,13 +25,6 @@ export class ContactService {
     class: ['snackbar-error']
   }
 
-  // Text messages in the English language
-  seccessMessageEN = 'Your message has been sent.';
-  seccessActionEN = 'OK';
-
-  errorMessageEN = 'An error occurred while sending the message.';
-  errorActionEN = 'Please try again!';
-
   constructor(private snackBar: SnackBarService) { }
 
   sendEmail(input: any) {
@@ -50,12 +43,16 @@ export class ContactService {
       phone: input.phone,
     };
 
+    // Official EmailJS SDK for Browsers
+    // https://www.npmjs.com/package/@emailjs/browser
     emailjs.send(serviceID, templateID, templateParams, options)
     .then(
       res => {
+        console.log('SUCCESS!', res.status, res.text);
         this.snackBar.openSnackBar(this.responseSuccess.message, this.responseSuccess.action, { panelClass: this.responseSuccess.class })
       },
       (err) => {
+        console.log('FAILED...', err);
         this.snackBar.openSnackBar(this.responseError.message, this.responseError.action, { panelClass: this.responseError.class })
       }
     )
