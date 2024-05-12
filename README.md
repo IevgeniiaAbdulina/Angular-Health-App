@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://mental-health-opal.vercel.app">
+    <a href="https://mental-health-wroclaw.vercel.app">
       Visit Site
     </a>
   </h3>
