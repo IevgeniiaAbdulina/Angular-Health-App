@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="#">
+    <a href="https://mental-health-opal.vercel.app">
       Visit Site
     </a>
   </h3>
@@ -21,15 +21,19 @@
 
 ## Overview
 
-<img src="https://firebasestorage.googleapis.com/v0/b/personal-portfolio-b7e69.appspot.com/o/Angular-Health-website%2Fhealth-app-template.png?alt=media&token=42187a70-8d16-4693-8740-8abcc49531c4" width="600px">
+<img src="https://firebasestorage.googleapis.com/v0/b/personal-portfolio-b7e69.appspot.com/o/Angular-Health-website%2FScreenshot-MH-home.png?alt=media&token=b216c456-fad7-45e8-a1b0-8613df9b6849" width="100%">
 
-This project uses:
-
-- maps
+- User can read the information about psychologist experience and information about the help offered.
+- User can send an email to the psychologist with text message.
 
 ## Built With
 
-- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli)@16.2.12
+- Send Email Directly From Contact Form [EmailJS](https://www.npmjs.com/package/@emailjs/browser)@4.3.3
+- Embedding a [Google Maps](https://www.google.com/maps)
+- [dotenv](https://www.npmjs.com/package/dotenv)@16.4.5
+- typescript@5.1.6
+- rxjs@7.8.1
 
 ## Project Structure
 
@@ -40,6 +44,8 @@ Website Pages:
 - Services
 - Contact
 - Appointment
+
+---
 
 <details>
 <summary>Home page</summary>
@@ -53,6 +59,8 @@ Features:
 - showing contact information
 </details>
 
+---
+
 <details>
 <summary>About me page</summary>
 
@@ -64,6 +72,8 @@ Features:
 - showing contact information
 - showing a button to get an appointment
 </details>
+
+---
 
 <details>
 <summary>Services page</summary>
@@ -77,8 +87,10 @@ Features:
 - showing a button to get an appointment
 </details>
 
+---
+
 <details>
-<summary>Contact page</summary>
+<summary>Contact section</summary>
 
 Contact information with a specialist.
 
@@ -91,19 +103,23 @@ Features:
 - showing Working hours
 </details>
 
+---
+
 <details>
 <summary>Appointment page</summary>
 
 Contact form to get an appointment.
 Send information to the specialist with data.
 
-\*Not saving personal users information.
+\* Not saving personal users information.
 
 Features:
 
 - showing a contact form
-- send an appointment data
+- send a messasge from the user to the specialist
 </details>
+
+---
 
 ## Contact
 
