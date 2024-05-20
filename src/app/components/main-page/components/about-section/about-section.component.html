@@ -1,7 +1,12 @@
 <div class="section-header">
   <h3>Jak mogę Ci pomóc?</h3>
-  <app-button [customClassList]="'btn-tertiary custom-btn-style'"
-  [isDisabledButton]="false" typeButton="button">zobacz wszystko</app-button>
+  <app-button
+    routerLink="/about"
+    [customClassList]="'btn-tertiary custom-btn-style'"
+    [isDisabledButton]="false"
+    typeButton="button">
+    zobacz wszystko
+  </app-button>
 </div>
 <div class="section-content">
   <mat-card class="content-item">

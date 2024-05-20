@@ -21,6 +21,7 @@ import { ContactFormComponent } from './components/appointment-page/components/c
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './components/appointment-page/services/contact.service';
+import { AboutPageComponent } from './components/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ContactService } from './components/appointment-page/services/contact.s
     AppointmentPageComponent,
     PageNotFoundComponent,
     ContactFormComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,
