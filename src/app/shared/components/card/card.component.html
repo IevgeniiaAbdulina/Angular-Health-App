@@ -1,0 +1,16 @@
+<mat-card [ngClass]="['item-card', customClass]">
+  <div class="card-img-container">
+    <img mat-card-image [src]="imgLink" alt="card image">
+  </div>
+  <mat-card-header>
+    <mat-card-title class="card-title text-oneline">{{ title }}</mat-card-title>
+    <mat-card-subtitle class="card-subtitle paragraph-1 text-oneline">{{ subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <ul>
+      <li *ngFor="let option of options">
+        <p>{{ option.name }}</p>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>

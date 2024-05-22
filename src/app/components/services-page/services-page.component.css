@@ -1,0 +1,108 @@
+section#services-header,
+section#services-main {
+  max-width: 100%;
+}
+
+#services-header .container,
+#services-main .container {
+  max-width: var(--page-width-max);
+}
+
+.section-background,
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.bg-overlay {
+  opacity: 0.4;
+  background-color: var(--dark-1);
+}
+
+.section-background img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  border-style: none;
+  object-position: 50% 50%;
+}
+
+#services-header .section-background {
+  height: 45vh;
+}
+
+.services-header-wrapper {
+  margin-top: 45vh;
+  background-color: #FFF;
+}
+
+.services-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.services-header-content h3 {
+  text-transform: uppercase;
+  color: var(--bright-2);
+}
+
+#services-main {
+  background-color: var(--light-1);
+}
+
+.services-main-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.services-main-content > app-card {
+  flex-grow: 1;
+}
+
+@media(min-width: 40rem) {
+  .services-main-content > app-card {
+    width: 46%;
+  }
+}
+@media(min-width: 62rem) {
+  .services-main-content > app-card {
+    width: 49%;
+  }
+}
+@media(min-width: 75rem) {
+  .services-main-content > app-card {
+    width: 32%;
+  }
+}
+
+#contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 4em;
+}
+
+@media (max-width: 900px) {
+  #contact-section {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}

@@ -132,7 +132,7 @@ body,
   /* Paragraphs */
 p {
   font-family: var(--font-open-sans);
-  font-weight: var(--weight-regular);;
+  font-weight: var(--weight-regular);
   font-style: normal;
   line-height: var(--paragraph-line-height);
   letter-spacing: var(--paragraph-letter-spacing);

@@ -82,7 +82,7 @@ app-menu {
   filter: brightness(85%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .header-actions,
   .header-nav {
     display: none;

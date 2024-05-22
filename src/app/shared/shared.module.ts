@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { CardComponent } from './components/card/card.component';
 
 const materialModuls = [
   MatButtonModule,
@@ -28,7 +29,8 @@ const materialModuls = [
 
 @NgModule({
   declarations: [
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,8 @@ const materialModuls = [
   ],
   exports: [
     materialModuls,
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }

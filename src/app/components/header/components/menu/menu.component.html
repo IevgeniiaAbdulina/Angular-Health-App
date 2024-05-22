@@ -16,6 +16,16 @@
                 <span class="custopm-nav-list-item">{{ nav }}</span>
               </a>
             </p>
+            <p class="nav-list-item">
+              <a mat-list-item routerLink="/services">
+                <span class="custopm-nav-list-item">Oferta</span>
+              </a>
+            </p>
+            <p class="nav-list-item">
+              <a mat-list-item routerLink="/about">
+                <span class="custopm-nav-list-item">O mnie</span>
+              </a>
+            </p>
           </mat-nav-list>
           <app-button (click)="sidenav.toggle()" routerLink="/appointment"
               [customClassList]="'btn-primary custom-btn-style'"

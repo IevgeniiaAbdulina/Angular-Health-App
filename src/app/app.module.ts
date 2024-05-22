@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './components/appointment-page/services/contact.service';
 import { AboutPageComponent } from './components/about-page/about-page.component';
+import { ServicesPageComponent } from './components/services-page/services-page.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AboutPageComponent } from './components/about-page/about-page.component
     PageNotFoundComponent,
     ContactFormComponent,
     AboutPageComponent,
+    ServicesPageComponent,
   ],
   imports: [
     BrowserModule,
