@@ -24,7 +24,7 @@ section#bio-section .container {
 .section-background img {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 45vh;
 }
 
 img {
@@ -100,11 +100,7 @@ img {
 }
 
 .details-block-item {
-  margin: 1.6em 0;
-  padding-top: 1.6em;
-  padding-bottom: 1.6em;
-  border-top: 1px solid var(--darkest-1);
-  border-bottom: 1px solid var(--darkest-1);
+  margin-bottom: 1.6em;
 }
 
 .item-box {
@@ -112,6 +108,11 @@ img {
   display: flex;
   justify-content: space-around;
   gap: 1em;
+
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  border-top: 1px solid var(--darkest-1);
+  border-bottom: 1px solid var(--darkest-1);
 }
 
 .item-box span {
@@ -175,9 +176,7 @@ input[type="checkbox"] {
   justify-content: space-around;
   align-items: center;
   gap: 1em;
-  padding-right: 20%;
-  padding-left: 20%;
-  padding-bottom: 4em;
+  padding: 6vw;
 }
 
 @media (max-width: 900px) {
@@ -185,6 +184,10 @@ input[type="checkbox"] {
   .item-box,
   #contact-section {
     flex-wrap: wrap;
+  }
+
+  .content-wrapper {
+    gap: 1em;
   }
 
   .content-item.section-header {

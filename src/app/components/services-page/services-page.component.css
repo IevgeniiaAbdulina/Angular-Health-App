@@ -95,9 +95,7 @@ img {
   justify-content: space-around;
   align-items: center;
   gap: 1em;
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-bottom: 4em;
+  padding: 6vw;
 }
 
 @media (max-width: 900px) {
