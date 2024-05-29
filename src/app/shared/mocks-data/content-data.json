@@ -1,0 +1,294 @@
+[
+  {
+    "name": "main",
+    "pageId": 1,
+    "sections": [
+      {
+        "name": "homeSection",
+        "title": "Introducing the mental health program",
+        "subtitle": "Get accessible and personalized mental health care in person or from the comfort of your home",
+        "imageSrc": "https://media.istockphoto.com/id/1365349094/pl/zdj%C4%99cie/dwie-nowoczesne-stylowe-kobiety-siedz%C4%85-w-biurze-i-dyskutuj%C4%85-o-pomys%C5%82ach-i-realizacji-plan%C3%B3w.jpg?s=2048x2048&w=is&k=20&c=98-vvQMEUfqCbXMH7enDgK2CenS8TJ_Gd1O6vK-Xz-4=",
+        "imageAlt": "Women Sitting on the Chair while Having Conversation"
+      },
+      {
+        "name": "aboutSection",
+        "title": "How can I help you?",
+        "cards": [
+          {
+            "title": "Psychologist",
+            "txtContent": {
+              "paragraph1": "Lorem ipsum dolor sit amet,  consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+            },
+            "imageSrc": "https://media.istockphoto.com/id/1356630941/pl/zdj%C4%99cie/kobieta-psycholog-pracuje-z-nastoletni%C4%85-dziewczyn%C4%85-w-jej-biurze-zdrowie-psychiczne.jpg?s=2048x2048&w=is&k=20&c=0DQ3VeJb7l2wrJv0icE-Sq0ja6OBZn4hO6bAgiXWzCA=",
+            "imageAlt": "psychologist"
+          },
+          {
+            "title": "Psychotherapy",
+            "txtContent": {
+              "paragraph1": "Lorem ipsum dolor sit amet,  consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+            },
+            "imageSrc": "assets/imges/pexels-george-milton-2.jpg",
+            "imageAlt": "candles"
+          },
+          {
+            "title": "Online psychological help",
+            "txtContent": {
+              "paragraph1": "Lorem ipsum dolor sit amet,  consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+            },
+            "imageSrc": "https://images.pexels.com/photos/7034440/pexels-photo-7034440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "imageAlt": "coffee"
+          }
+        ]
+      },
+      {
+        "name": "servicesSection",
+        "title": "Scope of assistance",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan.",
+        "txtContent": {
+          "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan. Integer interdum mauris eget consectetur ornare."
+        },
+        "imageSrc": "assets/imges/pexels-cottonbro-1.jpg",
+        "imageAlt": "workplace",
+        "accordionOptions": [
+          {
+            "title": "Personality disorder",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+          },
+          {
+            "title": "Sleep disorders",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+          },
+          {
+            "title": "Addiction",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+          }
+        ]
+      },
+      {
+        "name": "contactSection",
+        "title": "Let's be in touch",
+        "subtitle": "Contact me and start therapy",
+        "txtContent": {
+          "paragraph1": "Telephone registration",
+          "paragraph2": "To arrange an appointment, please call",
+          "paragraph3": "Registration is open from Monday to Friday,",
+          "paragraph4": "during business hours",
+          "paragraph5": "8:00-18:00"
+        },
+        "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10019.499350185737!2d17.032212250243717!3d51.11076940955378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc2754b3faf5b%3A0x8078a18bcd31612a!2sWyndham%20Wroclaw%20Old%20Town!5e0!3m2!1sen!2spl!4v1715508853892!5m2!1sen!2spl",
+        "contacts": {
+          "placeName": "Mental Health Wroclaw",
+          "address": {
+            "street": "pl. Rynek",
+            "building": "1",
+            "room": "I piętro",
+            "postalCode": "50-529",
+            "city": "Wrocław"
+          },
+          "phoneNumber": "+48 000 000 000",
+          "email": "mentalhealthwroclaw@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "name": "services",
+    "pageId": 2,
+    "sections": [
+      {
+        "name": "servicesHeaderSection",
+        "title": "The list of help offered",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "txtContent": {
+          "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis sapien, ut lobortis dolor. Nunc tristique est suscipit libero sodales vestibulum. Curabitur mollis vestibulum sem in dictum. Integer mauris massa, efficitur in sem eu, egestas vehicula arcu. Nullam at sapien at mi ornare euismod. Duis id aliquam tortor. Cras dignissim orci nunc, in egestas turpis semper id. In non dapibus nisl."
+        },
+        "imageSrc": "https://media.istockphoto.com/id/1365349094/pl/zdj%C4%99cie/dwie-nowoczesne-stylowe-kobiety-siedz%C4%85-w-biurze-i-dyskutuj%C4%85-o-pomys%C5%82ach-i-realizacji-plan%C3%B3w.jpg?s=2048x2048&w=is&k=20&c=98-vvQMEUfqCbXMH7enDgK2CenS8TJ_Gd1O6vK-Xz-4=",
+        "imageAlt": "Women Sitting on the Chair while Having Conversation"
+      },
+      {
+        "name": "servicesMainSection",
+        "title": "Click on a specific problem to find out more.",
+        "servicesList": [
+          {
+            "cardId": 1,
+            "title": "Service name 1",
+            "subtitle": "Donec consequat accumsan",
+            "options": [
+              {
+                "name": "Lorem ipsum dolor sit amet 1.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 2.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 3.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              }
+            ],
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/mental-health-wroclaw.appspot.com/o/icons%2Fcomedy_ic.png?alt=media&token=ae18625c-722e-42f2-9f71-0010b7c509d1"
+          },
+          {
+            "cardId": 2,
+            "title": "Service name 2",
+            "subtitle": "Donec consequat accumsan",
+            "options": [
+              {
+                "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              }
+            ],
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/mental-health-wroclaw.appspot.com/o/icons%2Fcomedy_ic.png?alt=media&token=ae18625c-722e-42f2-9f71-0010b7c509d1"
+          },
+          {
+            "cardId": 3,
+            "title": "Service name 3",
+            "subtitle": "Donec consequat accumsan",
+            "options": [
+              {
+                "name": "Lorem ipsum dolor sit amet 1.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 2.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 3.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              }
+            ],
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/mental-health-wroclaw.appspot.com/o/icons%2Fcomedy_ic.png?alt=media&token=ae18625c-722e-42f2-9f71-0010b7c509d1"
+          },
+          {
+            "cardId": 4,
+            "title": "Service name 4",
+            "subtitle": "Donec consequat accumsan",
+            "options": [
+              {
+                "name": "Lorem ipsum dolor sit amet 1.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 2.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 3.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              }
+            ],
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/mental-health-wroclaw.appspot.com/o/icons%2Fcomedy_ic.png?alt=media&token=ae18625c-722e-42f2-9f71-0010b7c509d1"
+          },
+          {
+            "cardId": 5,
+            "title": "Service name 5",
+            "subtitle": "Donec consequat accumsan",
+            "options": [
+              {
+                "name": "Lorem ipsum dolor sit amet 1.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              },
+              {
+                "name": "Lorem ipsum dolor sit amet 2.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              }
+            ],
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/mental-health-wroclaw.appspot.com/o/icons%2Fcomedy_ic.png?alt=media&token=ae18625c-722e-42f2-9f71-0010b7c509d1"
+          },
+          {
+            "cardId": 6,
+            "title": "Service name 6",
+            "subtitle": "Donec consequat accumsan",
+            "options": [
+              {
+                "name": "Lorem ipsum dolor sit amet 1.",
+                "link": "optional link",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in ex urna. Donec consequat dolor ut imperdiet accumsan."
+              }
+            ],
+            "imgUrl": "https://firebasestorage.googleapis.com/v0/b/mental-health-wroclaw.appspot.com/o/icons%2Fcomedy_ic.png?alt=media&token=ae18625c-722e-42f2-9f71-0010b7c509d1"
+          }
+        ]
+      },
+      {
+        "name": "servicesContactSection",
+        "title": "Would you like to make an appointment?"
+      }
+    ]
+  },
+  {
+    "name": "about",
+    "pageId": 3,
+    "sections": [
+      {
+        "name": "topBackgroundSection",
+        "title": "",
+        "subtitle": "",
+        "txtContent": {
+          "paragraph1": ""
+        },
+        "imageSrc": "https://images.pexels.com/photos/7034504/pexels-photo-7034504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "imageAlt": "books on a shelf"
+      },
+      {
+        "name": "aboutMeSection",
+        "title": "About me",
+        "subtitle": "Explore our psychology section!",
+        "txtContent": {
+          "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+          "paragraph2": "Balance & self-care",
+          "paragraph3": "Transformation",
+          "paragraph4": "Cursus metus aliquam eleifend mi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Libero justo laoreet sit amet. Dui id ornare arcu odio ut sem nulla pharetra."
+        },
+        "imageSrc": "https://images.pexels.com/photos/7034776/pexels-photo-7034776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "imageAlt": "girl with book"
+      },
+      {
+        "name": "biographySection",
+        "title": "Official bio",
+        "subtitle": "",
+        "txtContent": {
+          "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis sapien, ut lobortis dolor. Nunc tristique est suscipit libero sodales vestibulum. Curabitur mollis vestibulum sem in dictum. Integer mauris massa, efficitur in sem eu, egestas vehicula arcu. Nullam at sapien at mi ornare euismod. Duis id aliquam tortor. Cras dignissim orci nunc, in egestas turpis semper id. In non dapibus nisl.",
+          "paragraph2": "Nulla dictum magna et tellus semper aliquet. Mauris ornare finibus sodales. Nam auctor mi porta libero feugiat, id feugiat leo tempor. Curabitur nec nisl ut nisl lobortis dignissim in in leo. Duis risus urna, condimentum eget massa nec, tristique euismod risus. Ut a faucibus nunc. Mauris porta hendrerit magna, ac facilisis mi rutrum quis.",
+          "paragraph3": "Cras tincidunt nunc tristique orci sodales rhoncus. Morbi vel fermentum lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus vel ornare lacus, at ornare elit. Fusce egestas erat et enim laoreet, sed convallis diam laoreet. Maecenas venenatis placerat nunc, id finibus tortor vulputate eu. Nullam eleifend ligula sed dui tincidunt euismod. Fusce venenatis malesuada elementum. Ut facilisis quam a nulla maximus eleifend. Proin vel massa laoreet, efficitur est vel, cursus lorem. Praesent pharetra ante ac enim volutpat, eu aliquam mauris luctus.",
+          "paragraph4": "Vivamus purus nibh, suscipit sit amet pretium laoreet, maximus at metus. Donec vitae mi odio. Cras suscipit magna a risus consectetur, ut tempor augue gravida. Mauris in erat purus. Suspendisse ac mauris fermentum, pulvinar libero non, ultricies massa. Ut metus nibh, maximus ut magna tristique, bibendum dapibus eros. Nullam congue dolor neque, ac rutrum eros malesuada at. Sed vel justo mattis, sagittis felis et, egestas orci. Sed tincidunt, ante non egestas ultricies, turpis dui elementum erat, facilisis ornare ante nibh in turpis. Nunc semper turpis eu odio cursus aliquet. Aenean egestas, nisi sit amet cursus accumsan, diam felis imperdiet ligula, eu lacinia turpis enim sit amet velit.",
+          "paragraph5": "Integer dapibus lectus sit amet faucibus cursus. Donec eget dui nulla. Aenean a lacus nec odio tempus vestibulum. Sed aliquet elit nec nisl ultricies maximus. Nulla facilisi. Sed ut ultrices leo. Nulla bibendum elementum vehicula. Fusce sit amet felis dui. Praesent magna nisl, tristique ac fermentum et, pharetra sit amet enim."
+        },
+        "imageSrc": "",
+        "imageAlt": ""
+      }
+    ]
+  },
+  {
+    "name": "appointment",
+    "pageId": 4,
+    "sections": [
+      {
+        "name": "appointmentSection",
+        "title": "Make an appointment in the office or online",
+        "subtitle": "",
+        "txtContent": {
+          "paragraph1": "Registration by phone",
+          "paragraph2": "Monday-Friday",
+          "paragraph3": "+48 000 000 000"
+        },
+        "imageSrc": "",
+        "imageAlt": ""
+      }
+    ]
+  }
+]

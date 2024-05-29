@@ -16,21 +16,21 @@
         <div class="container translated-element">
           <div class="content-wrapper">
             <div class="content-item section-header">
-              <h3>About me</h3>
-              <p class="paragraph-1 section-subheader">Explore our psychology section!</p>
-              <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <h3>{{ fileContent?.content?.title }}</h3>
+              <p class="paragraph-1 section-subheader">{{ fileContent?.content?.subtitle?.header }}</p>
+              <p class="content-text">{{ fileContent?.content?.subtitle?.body }}</p>
               <div class="details-block-item top hidden">
                 <div class="item-box">
                   <label class="details-checkbox">
                     <input type="checkbox" checked class="checkbox-item">
-                    Balance & self-care
+                    {{ fileContent?.content?.checkboxes?.box1 }}
                   </label>
                   <label class="details-checkbox" >
                     <input type="checkbox" checked class="checkbox-item">
-                    Transformation
+                    {{ fileContent?.content?.checkboxes?.box2 }}
                   </label>
                 </div>
-                <p>Cursus metus aliquam eleifend mi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Libero justo laoreet sit amet. Dui id ornare arcu odio ut sem nulla pharetra.</p>
+                <p>{{ fileContent?.content?.body }}</p>
               </div>
               <div class="button-block-item top hidden">
                 <app-button
@@ -52,14 +52,14 @@
                 <div class="item-box">
                   <label class="details-checkbox">
                     <input type="checkbox" checked class="checkbox-item">
-                    Balance & self-care
+                    {{ fileContent?.content?.checkboxes?.box1 }}
                   </label>
                   <label class="details-checkbox" >
                     <input type="checkbox" checked class="checkbox-item">
-                    Transformation
+                    {{ fileContent?.content?.checkboxes?.box2 }}
                   </label>
                 </div>
-                <p>Cursus metus aliquam eleifend mi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Libero justo laoreet sit amet. Dui id ornare arcu odio ut sem nulla pharetra.</p>
+                <p>{{ fileContent?.content?.body }}</p>
               </div>
               <div class="button-block-item">
                 <app-button
@@ -77,27 +77,17 @@
       <section id="bio-section">
         <div class="container translated-element">
           <div class="bio-header">
-            <h3>Official Bio</h3>
+            <h3>{{ fileContent?.bio?.title }}</h3>
           </div>
           <div class="bio-content">
             <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis sapien, ut lobortis dolor. Nunc tristique est suscipit libero sodales vestibulum. Curabitur mollis vestibulum sem in dictum. Integer mauris massa, efficitur in sem eu, egestas vehicula arcu. Nullam at sapien at mi ornare euismod. Duis id aliquam tortor. Cras dignissim orci nunc, in egestas turpis semper id. In non dapibus nisl.
-              </p>
-              <p>
-                Nulla dictum magna et tellus semper aliquet. Mauris ornare finibus sodales. Nam auctor mi porta libero feugiat, id feugiat leo tempor. Curabitur nec nisl ut nisl lobortis dignissim in in leo. Duis risus urna, condimentum eget massa nec, tristique euismod risus. Ut a faucibus nunc. Mauris porta hendrerit magna, ac facilisis mi rutrum quis.
-              </p>
-              <p>
-                Cras tincidunt nunc tristique orci sodales rhoncus. Morbi vel fermentum lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus vel ornare lacus, at ornare elit. Fusce egestas erat et enim laoreet, sed convallis diam laoreet. Maecenas venenatis placerat nunc, id finibus tortor vulputate eu. Nullam eleifend ligula sed dui tincidunt euismod. Fusce venenatis malesuada elementum. Ut facilisis quam a nulla maximus eleifend. Proin vel massa laoreet, efficitur est vel, cursus lorem. Praesent pharetra ante ac enim volutpat, eu aliquam mauris luctus.
-              </p>
+              <p>{{ fileContent?.bio?.body?.p1 }}</p>
+              <p>{{ fileContent?.bio?.body?.p2 }}</p>
+              <p>{{ fileContent?.bio?.body?.p3 }}</p>
             </div>
             <div>
-              <p>
-                Vivamus purus nibh, suscipit sit amet pretium laoreet, maximus at metus. Donec vitae mi odio. Cras suscipit magna a risus consectetur, ut tempor augue gravida. Mauris in erat purus. Suspendisse ac mauris fermentum, pulvinar libero non, ultricies massa. Ut metus nibh, maximus ut magna tristique, bibendum dapibus eros. Nullam congue dolor neque, ac rutrum eros malesuada at. Sed vel justo mattis, sagittis felis et, egestas orci. Sed tincidunt, ante non egestas ultricies, turpis dui elementum erat, facilisis ornare ante nibh in turpis. Nunc semper turpis eu odio cursus aliquet. Aenean egestas, nisi sit amet cursus accumsan, diam felis imperdiet ligula, eu lacinia turpis enim sit amet velit.
-              </p>
-               <p>
-                Integer dapibus lectus sit amet faucibus cursus. Donec eget dui nulla. Aenean a lacus nec odio tempus vestibulum. Sed aliquet elit nec nisl ultricies maximus. Nulla facilisi. Sed ut ultrices leo. Nulla bibendum elementum vehicula. Fusce sit amet felis dui. Praesent magna nisl, tristique ac fermentum et, pharetra sit amet enim.
-               </p>
+              <p>{{ fileContent?.bio?.body?.p4 }}</p>
+               <p>{{ fileContent?.bio?.body?.p5 }}</p>
             </div>
           </div>
         </div>

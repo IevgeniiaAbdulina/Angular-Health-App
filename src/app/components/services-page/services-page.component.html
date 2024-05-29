@@ -2,39 +2,39 @@
   <header id="header" role="header">
     <app-header></app-header>
   </header>
-  <main id="main-page" role="main">
+  <main id="main-page" role="main" *ngFor="let section of getPageContent('services')?.sections">
     <div class="sections">
-      <section id="services-header">
+      <section id="services-header" *ngIf="section.name === 'servicesHeaderSection'">
         <div class="container">
           <div class="section-background">
-            <img class="top-image" src="https://media.istockphoto.com/id/1365349094/pl/zdj%C4%99cie/dwie-nowoczesne-stylowe-kobiety-siedz%C4%85-w-biurze-i-dyskutuj%C4%85-o-pomys%C5%82ach-i-realizacji-plan%C3%B3w.jpg?s=2048x2048&w=is&k=20&c=98-vvQMEUfqCbXMH7enDgK2CenS8TJ_Gd1O6vK-Xz-4=" alt="Women Sitting on the Chair while Having Conversation">
+            <img class="top-image" [src]="section.imageSrc" [alt]="section.imageAlt">
             <div class="bg-overlay"></div>
           </div>
           <div class="services-header-wrapper">
             <div class="services-header-content">
-              <h3>The list of help offered</h3>
-              <p class="paragraph-1 section-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mattis sapien, ut lobortis dolor. Nunc tristique est suscipit libero sodales vestibulum. Curabitur mollis vestibulum sem in dictum. Integer mauris massa, efficitur in sem eu, egestas vehicula arcu. Nullam at sapien at mi ornare euismod. Duis id aliquam tortor. Cras dignissim orci nunc, in egestas turpis semper id. In non dapibus nisl.</p>
+              <h3>{{ section.title }}</h3>
+              <p class="paragraph-1 section-subheader">{{ section.subtitle }}</p>
+              <p>{{ section.txtContent?.paragraph1 }}</p>
             </div>
           </div>
         </div>
       </section>
-      <section id="services-main">
+      <section id="services-main" *ngIf="section.name === 'servicesMainSection'">
         <div class="container translated-element">
-          <div class="services-main-content">
-            <app-card *ngFor="let service of servicesList"
-              [id]="service.cardId"
-              [title]="service.title"
-              [subtitle]="service.subtitle"
-              [options]="service.options"
-              [imgLink]="service.img"
+          <div class="services-main-content" >
+            <app-card *ngFor="let serviceCard of section.servicesList"
+              [id]="serviceCard.cardId"
+              [title]="serviceCard.title"
+              [subtitle]="serviceCard.subtitle"
+              [options]="serviceCard.options"
+              [imgLink]="serviceCard.imgUrl"
               [customClass]="'services-card'"
             ></app-card>
           </div>
         </div>
       </section>
-      <section id="contact-section">
-        <h3>Would you like to make an appointment?</h3>
+      <section id="contact-section" *ngIf="section.name === 'servicesContactSection'">
+        <h3>{{ section.title }}</h3>
         <div class="contact-button">
           <app-button
             routerLink="/appointment"
